@@ -36,7 +36,7 @@ public class Animal extends Animals {
                     .executeAndFetch(Animal.class);
         }
     }
-}
+
 public Animal find(int animalId){
     try(Connection con = DB.sql2o.open()){
         String sql = "SELECT * FROM animals WHERE animalId=:animalId;";
@@ -45,4 +45,5 @@ public Animal find(int animalId){
                 .executeAndFetchFirst(Animal.class);
         return animal;
     }
+}
 }

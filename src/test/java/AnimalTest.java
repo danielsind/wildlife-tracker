@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Arrays;
 
 public class AnimalTest {
+    @Rule
+    public DatabaseRule databaseRule = new DatabaseRule();
     @Test
     public void animalIsInstantiatedCorrectly_true(){
         Animal testAnimal = new Animal("Lion");

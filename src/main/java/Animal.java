@@ -60,7 +60,5 @@ public class Animal extends Animals {
                     .executeUpdate();
         }
     }
-
-
 }
 

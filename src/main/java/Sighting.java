@@ -1,18 +1,16 @@
 import org.sql2o.*;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Sighting {
-    private int animal_id;
+    private int animalId;
     private String location;
-    private String ranger_name;
+    private String rangerName;
     private int id;
 
-    public Sighting(int animal_id, String location, String ranger_name) {
-        this.animal_id = animal_id;
+    public Sighting(int animalId, String location, String rangerName) {
+        this.animalId = animalId;
         this.location = location;
-        this.ranger_name = ranger_name;
+        this.rangerName = rangerName;
         this.id = id;
     }
 
@@ -21,7 +19,7 @@ public class Sighting {
     }
 
     public int getAnimalId() {
-        return animal_id;
+        return animalId;
     }
 
     public String getLocation() {
@@ -29,7 +27,7 @@ public class Sighting {
     }
 
     public String getRangerName() {
-        return ranger_name;
+        return rangerName;
     }
 
     @Override
@@ -46,9 +44,9 @@ public class Sighting {
         try(Connection con = DB.sql2o.open()) {
             String sql = "INSERT INTO sightings (animal_id, location, ranger_name) VALUES (:animal_id, :location, :ranger_name);";
             this.id = (int) con.createQuery(sql, true)
-                    .addParameter("animal_id", this.animal_id)
+                    .addParameter("animal_id", this.animalId)
                     .addParameter("location", this.location)
-                    .addParameter("ranger_name", this.ranger_name)
+                    .addParameter("ranger_name", this.rangerName)
                     .throwOnMappingFailure(false)
                     .executeUpdate()
                     .getKey();

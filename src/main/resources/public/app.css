@@ -1,0 +1,91 @@
+body{
+    background-color: #3B7A57;
+    font-family: 'Poppins', sans-serif;
+}
+.introduction{
+position: relative;
+}
+.navbar-toggler, nav  a{
+   color: #FFFFFF;
+   }
+a.navbar-brand {
+font-size: 34px;
+ }
+nav a:hover{
+color: #000000;
+}
+#lion-image{
+position: fixed;
+right: 0px;
+bottom: 0px;
+padding: 0px;
+}
+.intro{
+margin-top: 16%;
+margin-left: 6%;
+}
+.intro >h1{
+font-size: 68px;
+}
+.intro >h3{
+font-size: 36px;
+}
+.submit{
+width: 400px;
+background: #7A3B5E;
+border-radius: 10px;
+color: #FFFFFF
+}
+.submit:hover{
+color: #000000;
+}
+.endangered, .endanger{
+margin-top: 10%;
+}
+.endanger{
+width: 653px;
+background: #7A3B5E;
+height: 133px;
+font-size: 48px;
+color: white;
+ }
+.endanger:hover{
+color: white
+}
+ .about-endangered {
+ font-size:24px;
+ width: 643px;
+ }
+ .discover{
+ color: white;
+ width: 227px;
+ height: 60px;
+ font-size: 24px;
+ background: #7A3B5E;
+ border-radius: 10px;
+ margin-left: 50%;
+
+ }
+ .discover:hover{
+ color: black;
+ }
+
+.add-animal{
+ margin-top: 10%}
+.add{
+ color: white;
+ width: 227px;
+ height: 60px;
+ font-size: 24px;
+ background: #7A3B5E;
+ border-radius: 10px;
+ }
+  a.add:hover{
+  color:white;
+  }
+.detail{
+color: #000000;
+}
+.add-animal{
+margin-top: 10%;
+}
